@@ -4,10 +4,10 @@
   "description": "",
   "author": "",
   "scripts": {
-    "start": "vite --config vite.config.dev.js",
-    "build": "vite build --config vite.config.lib.js",
-    "build:lib": "vite build --config vite.config.lib.js",
-    "build:wc": "vite build --config vite.config.wc.js",
+    "start": "node init && vite --config vite.config.dev.js",
+    "build": "node init && vite build --config vite.config.lib.js",
+    "build:lib": "node init && vite build --config vite.config.lib.js",
+    "build:wc": "node init && vite build --config vite.config.wc.js",
     "analyze": "ANALYZE=true npm run build",
     "prepublishOnly": "npm run build:lib"
   },
